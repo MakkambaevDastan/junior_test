@@ -11,6 +11,10 @@ DB_USER=root
 DB_PASSWORD=root
 DB_PORT=3306
 ```
+
+username: admin
+password: admin
+
 dbdiagram
 ![1](.drawSQL.png)
 
