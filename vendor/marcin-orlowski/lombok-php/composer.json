@@ -1,0 +1,47 @@
+{
+  "name": "marcin-orlowski/lombok-php",
+  "description": "Write less code!",
+  "homepage": "https://github.com/MarcinOrlowski/lombok-php",
+  "version": "1.1.1",
+  "keywords": [
+    "lombok",
+    "annotation",
+    "annotations",
+    "getters",
+    "setters",
+    "accessors",
+    "php",
+    "php8"
+  ],
+  "license": "LGPL-3.0-only",
+  "authors": [
+    {
+      "name": "Marcin Orlowski",
+      "homepage": "https://MarcinOrlowski.com/"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/MarcinOrlowski/lombok-php/",
+    "issues": "https://github.com/MarcinOrlowski/lombok-php/issues"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": "^8.0|^8.1|^8.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lombok\\": "src/",
+      "LombokTest\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "phpstan/phpstan": "^1.5"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit -c phpunit.xml -c phpunit.xml.dist",
+    "phpstan": "vendor/bin/phpstan analyze -c phpstan.neon.dist",
+    "lint": "@composer phpstan",
+    "mdlint": "markdownlint -c .markdownlint.yaml.dist docs *.md --ignore LICENSE.md"
+  }
+}

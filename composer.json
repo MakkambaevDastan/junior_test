@@ -1,0 +1,17 @@
+{
+    "name": "das/app",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Das\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "dastan"
+        }
+    ],
+    "require": {
+        "marcin-orlowski/lombok-php": "^1.1"
+    }
+}
